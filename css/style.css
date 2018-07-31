@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+    font: 300 17px/1.6 'Raleway', sans-serif;
+}
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+/* Layout */
+
+.ba-grid+.ba-grid {
+    margin-top: 30px;
+}
+
+.ba-grid:not(.ba-grid-nopad)>[class*="ba-width-"] {
+    padding-left: 30px;
+}
+
+.ba-grid {
+    margin-left: -30px;
+}
+
+.ba-section {
+    color: #262626;
+    padding: 90px 0;
+    background-color: #FFF;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ba-section--top {
+    background-image: url('../img/fresh-life.jpg');
+    padding-top: 50px;
+    padding-bottom: 120px;
+    min-height: 100vh;
+}
+
+.ba-section--about {
+    background-color: #00c4c4;
+    background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(0, 196, 196) 0%, rgb(0, 183, 183) 32%, rgb(0, 173, 173) 68%, rgb(0, 156, 156) 100%);
+    background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(0, 196, 196) 0%, rgb(0, 183, 183) 32%, rgb(0, 173, 173) 68%, rgb(0, 156, 156) 100%);
+    background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(0, 196, 196) 0%, rgb(0, 183, 183) 32%, rgb(0, 173, 173) 68%, rgb(0, 156, 156) 100%);
+    color: #FFF;
+    padding: 35px 0 20px;
+}
+
+.ba-section__picture {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ba-section__picture--about {
+    background-image: url('../img/raspberries.png');
+    width: 650px;
+    height: 644px;
+    
+    margin-left: -50px;
+    margin-top: 0px;
+}
+
+.ba-container {
+    width: 1200px;
+    min-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {}
+
+.logo {
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #262626;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    float: left;
+    padding-right: 37px;
+}
+
+.menu__item:last-of-type {
+    padding-right: 0;
+}
+
+.menu__a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    display: block;
+    position: relative;
+    line-height: 1;
+    padding-top: 1.3em;
+}
+
+.menu__a--active {}
+
+.menu__a--active::before {
+    display: block;
+    background-color: #ff6033;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 10px;
+    height: 3px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 69px;
+    left: 50%;
+    width: 24px;
+    margin-left: -12px;
+    height: 40px;
+}
+
+.content {
+    padding: 134px 0 100px 73px;
+}
+
+.content--fresh-life {
+    padding-top: 258px;
+    padding-bottom: 281px;
+    padding-left: 0;
+}
+
+.content__title {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1;
+}
+
+.content__title--fresh-life {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.content__text {
+    margin: 0 0 15px;
+}
+
+.content__text--fresh-life {
+    margin-bottom: 30px;
+}
+
+.content__button {
+    display: inline-block;
+    background-color: #ff6033;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 25px;
+    min-height: 55px;
+    font: inherit;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.content__button--fresh-life {}
