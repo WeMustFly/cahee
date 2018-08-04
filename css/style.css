@@ -5,8 +5,6 @@ body {
     font: 300 17px/1.6 'Raleway', sans-serif;
 }
 
-
-
 /* Typography */
 
 a,
@@ -52,8 +50,6 @@ select:focus {}
 
 textarea {}
 
-
-
 /* Layout */
 
 .ba-grid+.ba-grid {
@@ -96,11 +92,15 @@ textarea {}
 
 .ba-section--services {
     background-color: #70bfff;
-        padding-bottom: 130px;
+    padding-bottom: 130px;
 }
 
 .ba-section--gallery {
     background-color: #ffe92f;
+}
+
+.ba-section--blog {
+    background-color: #b07cf7;
 }
 
 .ba-section__picture {
@@ -123,11 +123,19 @@ textarea {}
     transform: rotate(10deg);
 }
 
+.ba-section--contact {
+    background-image: url('../img/contact-bg.png');
+}
+
 .ba-container {
     width: 1200px;
     min-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.ba-container--subscribe {
+    background: url('../img/subscribe.png') right top no-repeat;
 }
 
 .header {}
@@ -217,15 +225,29 @@ textarea {}
     height: 527px;
     padding-left: 0;
     padding-top: 210px;
-margin-top: 5px;
+    margin-top: 5px;
     margin-left: 66px;
-    }
+}
 
 .content--gallery {
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+}
+
+.content--subscribe {
+    padding-left: 0;
+}
+
+.content--blog {
+    padding-top: 0;
+    text-align: center;
+}
+
+.content--contact {
+    padding-top: 0;
+    text-align: center;
 }
 
 .content__title {
@@ -264,11 +286,15 @@ margin-top: 5px;
 
 .content__title--services {
     color: #ffffff;
-        margin-left: -35px;
+    margin-left: -35px;
     margin-top: 13px;
 }
 
 .content__title--gallery {}
+
+.content__title--subscribe {
+    font-size: 40px;
+}
 
 .content__text {
     margin: 0 0 15px;
@@ -279,6 +305,20 @@ margin-top: 5px;
 }
 
 .content__text--gallery {
+    padding: 0 300px;
+    margin-bottom: 46px;
+}
+
+.content__text--subscribe {
+    width: 541px;
+}
+
+.content__text--blog {
+    padding: 0 300px;
+    margin-bottom: 46px;
+}
+
+.content__text--contact {
     padding: 0 300px;
     margin-bottom: 46px;
 }
@@ -375,4 +415,158 @@ margin-top: 5px;
 
 .gallery__picture:hover {
     opacity: 0.7;
+}
+
+.subscribe {}
+
+.subscribe__inp {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #262626;
+    box-sizing: border-box;
+    background-color: rgba(38, 38, 38, 0);
+    width: 570px;
+    height: 55px;
+    padding-left: 10px;
+}
+
+.subscribe__button {
+    background-color: #96b92c;
+}
+
+.blog {}
+
+.blog__item {
+    position: relative;
+    width: 370px;
+    height: 310px;
+    padding: 30px 30px 10px;
+    margin-bottom: 50px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog__pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    object-fit: none;
+}
+
+.blog__gradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(transparent, grey);
+    z-index: 1;
+}
+
+
+.blog__date {
+    background-color: rgba(38, 38, 38, 0.5);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    color: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 0.9;
+    z-index: 2;
+}
+
+.blog__footer {
+    z-index: 2;
+}
+
+.blog__title {
+    text-align: left;
+    color: inherit;
+}
+
+.blog__author {
+    text-align: left;
+    color: inherit;
+}
+
+.blog__button {
+    background-color: #f72b3b;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 55px;
+}
+
+.contact {}
+
+.contact__form {
+    width: 500px;
+}
+
+.contact__input {
+    float: left;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+
+    border: 0;
+    border-left: 5px solid transparent;
+    background-color: rgba(0, 196, 196, 0.5);
+}
+
+.contact__input:focus {
+    background-color: #00c4c4;
+    border-left: 5px solid #355b82;
+}
+
+.contact__input--message {
+    height: 250px;
+}
+
+.contact__info {
+    text-align: left;
+}
+
+.contact__title {
+    margin-bottom: 0;
+}
+
+.contact__title:first-of-type {
+    margin-top: 0;
+}
+
+.contact__text {
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    height: 50px;
+    background-color: #262626;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo {
+    color: #b9b9b9;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer__copyright {
+    color: #b9b9b9;
+}
+
+.footer__made {
+    color: #b9b9b9;
+}
+
+.footer__love {
+    color: #ff2b58;
 }
